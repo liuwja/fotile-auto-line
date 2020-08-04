@@ -1,0 +1,13 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: auto-line-service
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id: auto-line-service:${server.port}
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
