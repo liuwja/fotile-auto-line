@@ -39,7 +39,7 @@ public class ServerImplProxy {
         return workCenter;
     }
 
-    public Order getOrderByOrderNumber(String orderNumber){
+    public Order getWorkOrderByName(String orderNumber){
         Order order = null;
         try {
             order = (Order) this.server.getOrderManager().getObject(orderNumber);
@@ -49,7 +49,7 @@ public class ServerImplProxy {
         return order;
     }
 
-    public ProductionLine getProductionLine(String productionLineName){
+    public ProductionLine getProductionLineByName(String productionLineName){
         ProductionLine productionLine = null;
         try {
             productionLine = (ProductionLine) this.server.getProductionLineManager().getObject(productionLineName);

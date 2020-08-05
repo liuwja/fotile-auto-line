@@ -1,5 +1,6 @@
 package com.fotile;
 
+import com.datasweep.compatibility.client.Order;
 import com.datasweep.compatibility.client.Unit;
 import com.fotile.proxy.ServerImplProxy;
 import org.junit.jupiter.api.Test;
@@ -17,8 +18,8 @@ class AutoLineServiceApplicationTests {
 	}
 
 	@Test
-	void test(){
-		Unit unit = proxy.getUnitBySerialNumber("1001000200040L012007200001");
-		System.out.println(unit);
+	void getWorkOrderByName(){
+		Order order = proxy.getWorkOrderByName("600405437");
+		System.out.println(order);
 	}
 }
