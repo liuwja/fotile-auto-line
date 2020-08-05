@@ -1,7 +1,7 @@
 package com.fotile.service.impl;
 
 import com.datasweep.compatibility.client.Unit;
-import com.fotile.Result;
+import com.fotile.bean.Result;
 import com.fotile.bean.TransferBean;
 import com.fotile.proxy.ServerImplProxy;
 import com.fotile.service.IAutoLineService;

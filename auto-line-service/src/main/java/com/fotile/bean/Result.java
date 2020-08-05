@@ -1,4 +1,4 @@
-package com.fotile;
+package com.fotile.bean;
 
 import com.fotile.constant.Constant;
 
