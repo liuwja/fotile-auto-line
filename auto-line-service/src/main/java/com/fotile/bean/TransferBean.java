@@ -5,10 +5,11 @@ import java.util.List;
 public class TransferBean {
     private String recid;
     private String serialNumber;
-    private String CheckResult;
-    private String WorkCenterName;
+    private boolean pass;
+    private String workCenterName;
     private List<String> defectCodes;
     private String productionLine;
+    private Integer stepMark;
 
     public String getRecid() {
         return recid;
@@ -26,20 +27,20 @@ public class TransferBean {
         this.serialNumber = serialNumber;
     }
 
-    public String getCheckResult() {
-        return CheckResult;
+    public boolean isPass() {
+        return pass;
     }
 
-    public void setCheckResult(String checkResult) {
-        CheckResult = checkResult;
+    public void setPass(boolean pass) {
+        this.pass = pass;
     }
 
     public String getWorkCenterName() {
-        return WorkCenterName;
+        return workCenterName;
     }
 
     public void setWorkCenterName(String workCenterName) {
-        WorkCenterName = workCenterName;
+        this.workCenterName = workCenterName;
     }
 
     public List<String> getDefectCodes() {
@@ -56,5 +57,13 @@ public class TransferBean {
 
     public void setProductionLine(String productionLine) {
         this.productionLine = productionLine;
+    }
+
+    public Integer getStepMark() {
+        return stepMark;
+    }
+
+    public void setStepMark(Integer stepMark) {
+        this.stepMark = stepMark;
     }
 }

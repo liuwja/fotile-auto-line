@@ -1,8 +1,8 @@
 package com.fotile.bean;
 
-import com.fotile.constant.Constant;
+import com.fotile.constant.IConstant;
 
-public class Result implements Constant{
+public class Result implements IConstant {
     private Integer status;
     private String reason;
 

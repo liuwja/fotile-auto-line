@@ -17,4 +17,13 @@ public interface IAutoLineService {
      * @return
      */
     Result produce(TransferBean bean);
+
+    /**
+     * 品质检验
+     * @param bean
+     * @return
+     */
+    Result quantityValidation(TransferBean bean);
+
+    Result packageDownLine(TransferBean bean);
 }

@@ -6,7 +6,7 @@ spring:
 eureka:
   instance:
     prefer-ip-address: true
-    instance-id: auto-line-service:${server.port}
+    instance-id: ${spring.application.name}:${server.port}
     hostname: localhost
   client:
     service-url:
