@@ -31,4 +31,11 @@ public class AutoLineController {
     public Result packageDownLine(@RequestBody TransferBean bean){
         return autoLineService.packageDownLine(bean);
     }
+
+    @RequestMapping("result")
+    public Result getResult(){
+        Result result = new Result();
+        result.setReason("liuwjg");
+        return result;
+    }
 }
